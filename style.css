@@ -1,0 +1,128 @@
+@import url("https://use.typekit.net/jmk3xov.css");
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+:root {
+  --dark-bg: rgba(15, 15, 15, 0.95);
+  --spacing: 350px;
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+main {
+  width: 100vw;
+  color: white;
+  z-index: 99;
+  position: relative; /* Change from absolute to relative */
+  margin: 0px auto;
+  padding: 120px 0px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+h1, h2, h3, blockquote {
+  font-family: elevon, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+}
+
+header {
+  background: var(--dark-bg);
+  grid-column: 2 / span 5;
+  font-size: 2.5rem;
+  padding: 2rem;
+  margin-bottom: var(--spacing);
+  border: 2px solid #ff6347;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #ff6347;
+}
+
+section {
+  grid-column: 2 / 8;
+  padding: 1rem;
+  background: var(--dark-bg);
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-bottom: var(--spacing);
+  border: 2px solid #ff6347;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #ff6347;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+section:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ff6347;
+}
+
+blockquote {
+  margin: 0;
+  padding: 0;
+  grid-column: 2 / span 9;
+  margin-bottom: var(--spacing);
+}
+
+.left {
+  grid-column: 6 / 12;
+}
+
+#nr1 {
+  font-size: 24px;
+  text-align: center;
+}
+
+#nr2 {
+  font-size: 18px;
+  text-align: center;
+}
+
+#start {
+  position: relative;
+  left: 190px;
+  font-size: 1.5rem;
+}
+
+footer {
+  grid-column: 2 / 12;
+  padding: 1rem;
+  background: var(--dark-bg);
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-bottom: var(--spacing);
+  border: 2px solid #ff6347;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #ff6347;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center; /* Center align text in the footer */
+}
+
+footer:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ff6347;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+footer ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+}
